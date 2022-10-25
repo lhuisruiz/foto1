@@ -1,7 +1,7 @@
 {
   "name": "Fotos",
   "short_name": "Fotos",
-  "description": "Bienvenid@s Tus fotos.",
+  "description": "Carpeta de fotos",
   "background_color": "#000",
   "theme_color": "#000",
   "orientation": "portrait",
