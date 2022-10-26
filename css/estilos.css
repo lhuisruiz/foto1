@@ -8,8 +8,8 @@
 :root {
     --main-color: #000000;
     --main-modal-color: rgba(2, 1, 1, 0.555);
-    --second-color: #2B2B2B;
-    --second-modal-color: rgba(43, 43, 43, .5);
+    --second-color: #b7b7b7;
+    --second-modal-color: rgb(0, 0, 0);
 }
 
 body {
@@ -30,7 +30,7 @@ body {
 }
 
 .titulo {
-    color: #ffffff;
+    color: var(--second-modal-color);
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
@@ -64,11 +64,6 @@ nav {
     z-index: 1;
 
 }
-
-.ico {
-    color: #fff;
-}
-
 .container-botones-2 {
     width: 100%;
     height: 258px;
@@ -83,7 +78,8 @@ nav {
     display: flex;
     text-decoration: none;
     align-items: center;
-    color: #000;
+    color: var(--main-color);
+    margin-left: 20px;
 
 }
 
@@ -123,7 +119,7 @@ header .textos-header {
 }
 
 .ico-3 {
-    color: #fff;
+    color:rgb(255, 255, 255);
     font-size: 20px;
 }
 
@@ -176,7 +172,7 @@ main .sobre-nosotros {
 
 .contenido-textos h3 span {
     background: #4d0686;
-    color: #fff;
+    color: var(--second-modal-color);
     border-radius: 50%;
     display: inline-block;
     text-align: center;
@@ -191,7 +187,7 @@ main .sobre-nosotros {
     padding: 0px 0px 30px 15px;
     font-weight: 300;
     text-align: justify;
-    color: #fff;
+    color:  var(--second-modal-color);
 }
 
 
@@ -234,11 +230,12 @@ main .sobre-nosotros {
 
 .btn-abrir-2 {
     background: #00000000;
-    color: rgba(218, 0, 0, 0);
+    color:var(--second-modal-color);
     padding: 1px;
     display: inline-block;
     border: none;
     cursor: pointer;
+
 }
 
 .btn-abrir {
@@ -259,14 +256,14 @@ main .sobre-nosotros {
     padding: 5px;
     border-radius: 5px;
 }
-
+/*qr*/
 .ico {
     font-size: 37px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    margin: 10px;
+    color: var(--second-color);
+    margin: 20px;
 
 }
 
@@ -366,10 +363,10 @@ p {
 }
 
 .subcription {
-    background: #fff;
+    background: var(--main-color);
     flex-basis: 0;
     flex-grow: 2;
-    height: 500px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -386,7 +383,7 @@ p {
 .sub-content h2 {
     font-weight: 500;
     font-size: 40px;
-    color: var(--main-color);
+    color: var(--second-color);
     margin: 10px;
 }
 
@@ -398,27 +395,31 @@ p {
 
 .subs-email {
     width: 90%;
-    padding: 15px;
-    border: none;
-    background: #ccc;
+    padding: 10px;
+    border: 4px rgb(255, 0, 0);
+    background: rgb(0, 0, 0);
+    margin-top: 10px;
     margin-bottom: 15px;
 }
 
 .subs-send {
-    width: 100%;
-    padding: 15px;
+    width: 80%;
+    padding: 10px;
     border: none;
-    background: #000000;
-    color: #fff;
+    background: var(--second-color);
+    color: var(--main-color);
     font-size: 18px;
     cursor: pointer;
+    margin-top: 20px;
     margin-bottom: 20px;
     transition: .25s ease background;
     border-radius: 20px;
 }
 
 .subs-send:hover {
-    background: #000000;
+    background-color: #000000;
+    color: #fff;
+    border-color: 1px #fff;
 }
 
 .line {
@@ -433,7 +434,7 @@ p {
     top: 40px;
     right: 25px;
     font-size: 25px;
-    color: #000000;
+    color: var(--second-color);
     cursor: pointer;
 }
 
@@ -465,7 +466,7 @@ p {
 
 .menu-bajo {
     width: 100%;
-    height: 55px;
+    height: 65px;
     color: #fff;
     background-color: #000;
     position: fixed;
@@ -556,9 +557,11 @@ p {
 
 .boton {
     
-    padding: 5px;
+    padding: 2px;
     color: rgb(0, 0, 0);
-    font-size: 10px;
+    font-size: 15px;
+    margin-left: 10px;
+    
     
 }
 
@@ -568,7 +571,7 @@ p {
     margin-top: 30px;
     font-size: 20px;
     font-weight: 100;
-    background-color: #fff;
+    background-color: var(--second-color);
     padding: 5px 20px 5px 20px;
     border-radius: 10px;
     text-transform: uppercase;
@@ -583,7 +586,7 @@ p {
     margin-top: 30px;
     font-size: 20px;
     font-weight: 100;
-    background-color: #fff;
+    background-color: var(--second-color);
     padding: 5px 20px 5px 20px;
     border-radius: 10px;
     text-transform: uppercase;
@@ -609,4 +612,46 @@ p {
     42%, 44%, 46%,48%,  50%  { 
         opacity: 0; 
     }
+}
+.container-game{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+}
+.game-caja{
+    width: 30%;
+    height: auto;
+    background-color: var(--second-color);
+    border-radius: 5PX;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+
+}
+.bt-game{
+    width: 240px;
+    height: 40px;
+    margin: 5px 0px 20px 0 ;
+    background-color: #000;
+    color: rgb(196, 196, 196);
+    border: none;
+    font-size: 15px;
+}
+@media (max-width: 600px){
+    .game-caja{
+        width: 80%;
+    }
+}
+.img-game{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px #000;
 }

@@ -1,3 +1,17 @@
+const evento = document.getElementById('send')
+const enviarFormulario =() => {
+
+        let numero = document.getElementById('numero').value;
+       
+        
+var win= window.open(`https://wa.me/54${numero}?text=App:%20 
+https://bit.ly/3TUtK0r`,'_blank');       
+//
+}
+evento.addEventListener('click', enviarFormulario)
+
+
+
 //Compartir
 const shareBtn = document.getElementById('shareBtn')
 shareBtn.addEventListener('click', event => {
@@ -21,7 +35,7 @@ shareBtn.addEventListener('click', event => {
 
  function modal_05() {
     Swal.fire({
-        html: '<h3>Black Momets</h3>',
+        html: '<h3 class="bm">Black Momets</h3>',
         imageUrl: 'https://res.cloudinary.com/lhuis/image/upload/v1666754485/iconos/fkppmxoe9qs9xhggmzcc.png',
        //tamaño
         imageWidth: 300,
@@ -30,7 +44,7 @@ shareBtn.addEventListener('click', event => {
         padding:'1rem',
         showCloseButton:true,
         showConfirmButton:false,
-        
+        background:'linear-gradient(#000,#000)',
         
     })
  }
