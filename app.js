@@ -76,19 +76,19 @@ function modal_05() {
 // automatica
 setTimeout(function () {
 Swal.fire({
-    
+    /*
     html: '<div class="mensaje">' +
         '<h3 class="bm">Black Momets</h3>' +
         '<p>Foto disponible el <b>4 de octubre</b>, Si no aparecen escribeme al </p>' +
         '<a href="https://wa.me/541144382987" target="_blank"><button class="bt-msj" >+54 11 4438-2987</button></a>' +
         '</div>',
-     /*
+    */
         html: '<div class="mensaje">' +
         '<h3 class="bm">Black Momets</h3>' +
         '<p>Fotos listas, gracias por la confianza</p>' +
         
         '</div>',
-    */
+   
     //tamaño
     imageWidth: 300,
     imageHeight: 300,
