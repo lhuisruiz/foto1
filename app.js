@@ -36,7 +36,7 @@ shareBtn.addEventListener('click', event => {
 //Numero de pagina
 function modal_009() {
     Swal.fire({
-        html: '<h3 class="bm">ivan zarate Foto2</h3>',
+        html: '<h3 class="bm">Brisa Foto1</h3>',
         //tamaño
         imageWidth: 300,
         imageHeight: 300,
@@ -82,13 +82,13 @@ Swal.fire({
         '<p>Foto disponible el <b>4 de octubre</b>, Si no aparecen escribeme al </p>' +
         '<a href="https://wa.me/541144382987" target="_blank"><button class="bt-msj" >+54 11 4438-2987</button></a>' +
         '</div>',
-    */
+  */
         html: '<div class="mensaje">' +
         '<h3 class="bm">Black Momets</h3>' +
         '<p>Fotos listas, gracias por la confianza</p>' +
         
         '</div>',
-   
+  
     //tamaño
     imageWidth: 300,
     imageHeight: 300,
